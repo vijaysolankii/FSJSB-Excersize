@@ -1,0 +1,17 @@
+Web History
+	>> Learn about the Web History : https://vijaysolanki.hashnode.dev/introduction-to-web-html
+
+HTML (DAY-1)
+	>> Learn about the basic tags [div,p,a,img,span,formatting[b,strong,i,em,strike,adi,bdi,mark],headings,ul,ol,dl]
+
+HTML (DAY-2)
+	>> Learn about the basic tags [forms,input types,iframe,tables,W3C standerds,audio,video]
+
+CSS-Selectors
+
+
+CSS (DAY-1)
+	>> created article on the css : https://vijaysolanki.hashnode.dev/css-selectors
+
+CSS (DAY-2) 
+	>> Review the Previous Work 
