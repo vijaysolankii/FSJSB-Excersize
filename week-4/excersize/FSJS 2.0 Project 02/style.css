@@ -1,0 +1,60 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{font-family: 'Montserrat',sans-serif;color: var(--white);}
+:root{
+    --black: #000;
+    --white: #fff;
+    --purple : #ba0cc5;
+}
+
+.d-flex{display: flex;}
+.text-center{text-align: center;}
+.no-bullet{list-style: none;}
+
+nav{background-color: var(--black);padding: 20px 100px;align-items: center;position: fixed;top: 0;left: 0;width: 100%;}
+nav .navbar{align-items:center;}
+nav img{margin-right:70px;border-right:1px solid var(--white);padding-right:50px;}
+nav .grow-list ul{gap:50px;}
+nav .grow-list ul li{text-transform:uppercase;cursor: pointer;position: relative;transition: 0.5s ease all;}
+nav .grow-list ul li:hover{color: var(--purple);}
+nav .grow-list ul li:first-child:after {content: "";position: absolute;width: 0.4em;height: 0.4em;border-right: 0.2em solid var(--white);border-top: 0.2em solid var(--white);transform: rotate(133deg);display: inline-block;top: 2px;right: -17px;}
+nav .btn-wrap{margin-left: auto;}
+nav .btn-wrap button{appearance: none;border: 1.5px solid var(--purple);background-color: var(--purple);font-size: 18px;color: var(--white);padding: 10px 20px;border-radius: 5px;transition: 0.5s linear;}
+nav .btn-wrap button:hover{background-color: transparent;color: var(--purple);}
+
+.hero_banner{background-repeat: no-repeat;background-size: cover;min-height:100vh;display: flex;align-items: center;justify-content: center;}
+.hero{max-width: 50%;margin: 101px auto 0;}
+.hero h1{font-size: 70px;margin-bottom: 10px;}
+.hero p{font-size: 24px;margin-bottom: 50px;}
+.hero button{appearance: none;border: 1.5px solid var(--purple);background-color: var(--purple);font-size: 26px;font-weight: bold; color: var(--white);padding: 10px 20px;border-radius: 5px;transition: 0.5s linear;}
+.hero button:hover{background-color: var(--white);border-color: var(--white);color: var(--black);}
+
+
+@media (max-width:1440px){
+    nav{padding: 20px 30px;}
+    .hero{max-width: 70%;}
+}
+@media (max-width:1199px){
+    nav .grow-list ul{gap: 30px ;}
+    nav .grow-list ul li:first-child{margin-right: 10px;}
+    nav img{max-width:145px;margin-right:30px;padding-right:30px;}
+}
+
+@media (max-width:991px){
+    nav{flex-wrap:wrap;align-items:center;gap:25px;justify-content:center;text-align: center;}
+    nav div{width:100%;margin:0;}
+    nav div img{border: 0;margin: 0;padding: 0;max-width: 20%;}
+    .line{display: none;}
+    nav .grow-list ul{justify-content: center;flex-wrap: wrap;gap: 20px ;}
+
+    .hero{max-width: 100%;padding: 0 20px;}
+    .hero h1{font-size: 40px;}    
+}
+@media (max-width:767px){
+    nav div img{max-width: 130px;margin: 0 auto;}
+    .hero h1{font-size: 30px;}    
+    .hero P{font-size: 16px;margin-bottom: 30px;}    
+    .hero button{font-size: 16px;}    
+}
