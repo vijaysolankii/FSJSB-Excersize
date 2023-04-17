@@ -1,0 +1,74 @@
+<!-- 
+    25. Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+    - The same groups apply to both men and women.
+    - Underweight: BMI is less than 18.5
+    - Normal weight: BMI is 18.5 to 24.9
+    - Overweight: BMI is 25 to 29.9
+    - Obese: BMI is 30 or more 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <center>
+      <h1>BMI Calculator</h1>
+    </center>
+    <table>
+      <tr>
+        <td>weight</td>
+        <td><input type="text" name="weight" id="weight" /></td>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td><input type="text" name="height" id="height" /></td>
+      </tr>
+      <tr>
+        <td><button>get BMI</button></td>
+      </tr>
+      <tr>
+        <td><div id="result"></div></td>
+      </tr>
+    </table>
+
+    <script>
+      function checkBMI() {
+        let weight = parseInt(document.getElementById("weight").value);
+        let height = parseInt(document.getElementById("height").value);
+        let result = document.getElementById("result");
+
+        if (height === "" || isNaN(height))
+          result.innerText = `enter valid height`;
+        else if (weight === "" || isNaN(weight))
+          result.innerHTML = `enter valid width`;
+        else {
+          let bmi = (weight / ((height * height) / 10000)).toFixed(2);
+          
+          console.log(height,weight)
+
+          if (bmi < 18.6) {
+            result.innerText = `Your ${bmi} is Overweight`;
+          } 
+          if (bmi >= 18.6 && bmi <= 24.9) {
+            result.innerText = `Your ${bmi} is Normal`;
+          } 
+          if (bmi >= 25 && bmi <= 29.9) {
+            result.innerText = `Your ${bmi} is Overweight`;
+          } 
+          if(bmi > 30){
+            result.innerText = `Your ${bmi} is obese`;
+          }
+          
+        }
+      }
+
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", checkBMI);
+    </script>
+  </body>
+</html>

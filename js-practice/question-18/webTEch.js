@@ -1,0 +1,3 @@
+const latestWebTechnologies = ['Blockchain Technology', 'Progressive Web Apps (PWA)', 'Internet of Things (IoT)', 'Accelerated Mobile Pages (AMP)', 'Voice Search Optimization', 'API-first Development', 'AI-Powered Chatbots', 'Push Notifications', 'Content Personalization with Machine Learning', 'Motion UI', 'Data Security', 'Multi-experience', 'Cybersecurity', 'Micro Frontends', 'Virtual Reality', 'Serverless Architecture', 'Cloud Computing', 'Single-Page Applications (SPA)', 'JavaScript Frameworks', 'Automation Testing', 'Responsive Websites', 'Dark Mode', 'WebAssembly', 'No-code/Low code development', 'Augmented Reality', 'Mobile-Friendly Web Development', 'Core Web Vitals', 'WordPress Development']
+
+module.exports = {latestWebTechnologies}

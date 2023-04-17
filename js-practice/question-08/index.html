@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   console.log(true || false) // true
+    //   console.log(false || true) // true
+    //   console.log(true || true) // true
+    //   console.log(false || false) // false
+
+    //   console.log(false && true) // false
+    //   console.log(false && false) // false
+    //   console.log(true && false) // false
+    //   console.log(true && true) // true
+
+      // Question 10 : predict following results
+      // console.log(4 > 3) // true
+      // console.log(4 >= 3) // false X
+      // console.log(4 < 3) // false
+      // console.log(4 <= 3) // false
+      // console.log(4 == 4) // true
+      // console.log(4 === 4)  // true
+      // console.log(4 != 4) // false
+      // console.log(4 !== 4)  // true X
+      // console.log(4 != '4')  // true // false H
+      // console.log(4 == '4') // true
+      // console.log(4 === '4') // false
+
+      // console.log("python".length !== "jargon".length)
+
+      // Question 11 : find current year
+
+      let currentYear = new Date().getFullYear();
+      let currentMonth = new Date().getMonth();
+      let currentDay = new Date().getDate();
+      let currentToday = new Date().getDay();
+      let currentHours = new Date().getHours();
+      let currentMinutes = new Date().getMinutes();
+      console.log("current year is : ", currentYear);
+      console.log("current month is : ", currentMonth);
+      console.log("current day is : ", currentDay);
+      console.log("current currentHours is : ", currentHours);
+      console.log("current currentMinutes is : ", currentMinutes);
+
+      console.log(new Date().getTime() / 1000);
+
+      console.log(
+        currentYear +
+          "-" +
+          ("0" + currentMonth).slice(-2) +
+          "-" +
+          ("0" + currentDay).slice(-2) +
+          " " +
+          currentHours +
+          ":" +
+          currentMinutes
+      );
+      console.log(
+        ("0" + currentDay).slice(-2) +
+          "-" +
+          ("0" + currentMonth).slice(-2) +
+          "-" +
+          currentYear +
+          " " +
+          currentHours +
+          ":" +
+          currentMinutes
+      );
+      console.log(
+        ("0" + currentDay).slice(-2) +
+          "/" +
+          ("0" + currentMonth).slice(-2) +
+          "/" +
+          currentYear +
+          " " +
+          currentHours +
+          ":" +
+          currentMinutes
+      );
+
+      let a = prompt("enter your age");
+      console.log(a);
+
+      if(a > 18){
+        console.log("You are old enough to drive")
+      } else {
+        console.log("wait for the number of years he needs to turn 18")
+      }
+    </script>
+  </body>
+</html>
